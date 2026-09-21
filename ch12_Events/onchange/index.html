@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Geographic Information</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🌍 Country Explorer</h1>
+        <p class="subtitle">Select a country to view its geographic information</p>
+
+        <div class="selection-box">
+            <label for="country">Choose a Country:</label>
+
+            <!-- onchange event -->
+            <select id="country" onchange="showCountryInfo()">
+                <option value="">-- Select a Country --</option>
+                <option value="kenya">🇰🇪 Kenya</option>
+                <option value="nigeria">🇳🇬 Nigeria</option>
+                <option value="egypt">🇪🇬 Egypt</option>
+                <option value="southAfrica">🇿🇦 South Africa</option>
+                <option value="ghana">🇬🇭 Ghana</option>
+                <option value="tanzania">🇹🇿 Tanzania</option>
+                <option value="ethiopia">🇪🇹 Ethiopia</option>
+                <option value="usa">🇺🇸 United States</option>
+                <option value="uk">🇬🇧 United Kingdom</option>
+                <option value="japan">🇯🇵 Japan</option>
+            </select>
+        </div>
+
+
+        <!-- Country information -->
+        <div id="countryInfo" class="info-card">
+
+            <div class="welcome-icon">🌎</div>
+
+            <h2>Select a Country</h2>
+
+            <p>
+                Choose a country from the dropdown above
+                to see its geographic information.
+            </p>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
